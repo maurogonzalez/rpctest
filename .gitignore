@@ -1,0 +1,4 @@
+*.pb.go
+**/target
+project/build.properties
+project/project
