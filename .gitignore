@@ -1,4 +1,9 @@
 *.pb.go
+*_pb.js
+*_pb.d.ts
+*ServiceClientPb.ts
 **/target
 project/build.properties
 project/project
+envoy.local.yaml
+.vscode
