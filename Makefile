@@ -12,3 +12,6 @@ run-server:
 
 run-client: $(GOLIB_DIR)/protocol.pb.go
 	go run gotest/cmd/*.go
+
+clean:
+	rm -f $(GOLIB_DIR)/protocol.pb.go $(PROTO_DIR)/protocol.proto

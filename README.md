@@ -9,7 +9,7 @@ Run `make`. Then run `make run-server`, and in a different terminal,
 
 The client prints `Good bye!`.
 
-## Actual behavior
+## Actual behavior before the fix
 
 ```
 $ make run-client

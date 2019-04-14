@@ -5,7 +5,7 @@ package rpctest {
   import rpctest.protocol._
 
   class ServiceHandler[F[_]: Async] extends Greeter[F] {
-    override def sayHello(request: HelloRequest): F[HelloResponse] =
+    override def SayHello(request: HelloRequest): F[HelloResponse] =
       HelloResponse(message = "Good bye!").pure[F]
   }
 }

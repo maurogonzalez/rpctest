@@ -8,7 +8,7 @@ object ClientApp {
   import gclient.implicits._
 
   def main(args: Array[String]): Unit = {
-    serviceClient.use(_.sayHello(HelloRequest("foo"))).flatMap { result =>
+    serviceClient.use(_.SayHello(HelloRequest("foo"))).flatMap { result =>
       IO(println(s"Result = $result"))
     }.unsafeRunSync()
   }
