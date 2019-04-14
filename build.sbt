@@ -14,3 +14,11 @@ lazy val rpctest = (project in file("modules/rpctest/app"))
     addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.1"
       cross CrossVersion.patch)
   )
+
+lazy val rpcClient = (project in file("modules/rpctest/client"))
+  .settings(
+    name := "Client",
+
+    libraryDependencies += "io.higherkindness" %% "mu-rpc-netty" % muVersion,
+  )
+  .dependsOn(rpctest)
