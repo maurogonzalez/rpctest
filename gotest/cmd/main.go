@@ -18,7 +18,7 @@ func main() {
 
 	client := pb.NewGreeterClient(conn)
 	reply, err := client.SayHello(context.Background(),
-		&pb.HelloRequest{Name: "test"})
+		&pb.HelloRequest{Name: "bye"})
 	if err != nil {
 		panic(err)
 	}

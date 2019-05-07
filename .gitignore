@@ -1,3 +1,4 @@
+.idea/
 *.pb.go
 **/target
 project/build.properties
