@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package rpctest.pkg;
+
+message HelloRequest {
+  Test name = 1;
+}
+
+message HelloResponse {
+  Test message = 1;
+}
+
+service Greeter {
+  rpc SayHello (HelloRequest) returns (HelloResponse);
+}
+
+enum Test {
+  HELLO = 0;
+  HI = 1;
+  GOODBYE = 2;
+}
